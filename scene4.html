@@ -23,7 +23,7 @@
         <!-- กล่องสนทนาแม่บ้าน -->
         <div class="dialog-box">
             <span class="name">แม่บ้าน</span>
-            <p>ได้ค่ะ จะถามเรื่องไหนดีคะ</p>
+            <p id="dialog"></p>
         </div>
         
         <!-- ตัวเลือกคำถาม -->
@@ -35,7 +35,12 @@
         </div>
     </div>
     
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "ได้ค่ะ จะถามเรื่องไหนดีคะ";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function askQuestion1() {
             window.location.href = "quest1.html";
         }

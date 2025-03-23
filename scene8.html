@@ -23,11 +23,16 @@
         </div>
         <div class="dialog-box">
             <span class="name">???</span>
-            <p>คุณเป็นใครเข้ามาได้ไงนะ</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "คุณเป็นใครเข้ามาได้ไงนะ";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "scene9.html";
         }

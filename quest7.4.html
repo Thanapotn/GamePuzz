@@ -18,12 +18,16 @@
         
         <div class="dialog-box">
             <span class="name">นักสืบ</span>
-            <p>ใบนี้เกี่ยวกับมารดกและเงินทองที่ลงนามไว้</p>
-            <p>โดยเขียนไว้ประมาณว่าแบ่งทรัพสิน50%ให้ภรรยา ส่วน25%แบ่งให้ลูกทั้งสอง และบ้านหลังนี้เป็ยของลูกคนที่2</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "ใบนี้เกี่ยวกับมารดกและเงินทองที่ลงนามไว้ \n โดยเขียนไว้ประมาณว่าแบ่งทรัพสิน50%ให้ภรรยา ส่วน25%แบ่งให้ลูกทั้งสอง และบ้านหลังนี้เป็ยของลูกคนที่2";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "scene7.html";
         }

@@ -11,11 +11,16 @@
         <img src="คฤหาส.jpg" class="background">
         <div class="dialog-box">
             <span class="name">ผู้บรรยาย</span>
-            <p>(คุณแแกไปจากคฤหาส์และไม่หันหลังกลับมาอีกเลย)</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "(คุณแแกไปจากคฤหาส์และไม่หันหลังกลับมาอีกเลย)";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "index.html";
         }

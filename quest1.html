@@ -17,11 +17,16 @@
         </div>
         <div class="dialog-box">
             <span class="name">แม่บ้าน</span>
-            <p>ตอนเกิดเห็นคนที่อยู่จะมี ภรรยา และ ลูกทั้ง2คน</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "ตอนเกิดเห็นคนที่อยู่จะมี ภรรยา และ ลูกทั้ง2คน";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "scene4.html";
         }

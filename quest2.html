@@ -17,11 +17,16 @@
         </div>
         <div class="dialog-box">
             <span class="name">แม่บ้าน</span>
-            <p>เวลาเกิดเหตุประมาณช่วง2ทุ่มค่ะ</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "เวลาเกิดเหตุประมาณช่วง2ทุ่มค่ะ";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "scene4.html";
         }

@@ -14,11 +14,17 @@
         </div>
         <div class="dialog-box">
             <span class="name">นักสืบ</span>
-            <p>นี่สินะที่เกิดเหตุ ที่ๆเกิดคดีฆาตกรรมไปอย่างปริศนา</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "นี่สินะที่เกิดเหตุ ที่ๆเกิดคดีฆาตกรรมไปอย่างปริศนา";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
+
         function nextScene() {
             window.location.href = "scene2.html";
         }

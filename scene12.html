@@ -17,11 +17,16 @@
         </div>
         <div class="dialog-box">
             <span class="name">ลูกสาว</span>
-            <p>แล้วคุณนักสืบได้เลยอะไรบ้างละหลังจากสืบ</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
     </div>
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "แล้วคุณนักสืบได้เลยอะไรบ้างละหลังจากสืบ";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "scene13.html";
         }

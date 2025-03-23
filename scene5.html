@@ -23,13 +23,18 @@
         <!-- กล่องสนทนาแม่บ้าน -->
         <div class="dialog-box">
             <span class="name">แม่บ้าน</span>
-            <p>นี้ค่ะ ห้องทำงานที่เกิดเหตุขึ้น</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()">▶</button>
         </div>
         
     </div>
     
+    <script src="typewriter.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "นี้ค่ะ ห้องทำงานที่เกิดเหตุขึ้น";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
         function nextScene() {
             window.location.href = "scene6.html";
         }

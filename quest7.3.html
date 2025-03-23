@@ -20,10 +20,17 @@
         
         <div class="dialog-box">
             <span class="name">นักสืบ</span>
-            <p>บนโต็ะมีตู้ดเซฟด้วย</p>
+            <p id="dialog"></p>
             <button onclick="nextScene()"> ⬅ </button>
         </div>
     </div>
     <script src="game.js"></script>
+    <script src="typewriter.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const text = "บนโต็ะมีตู้เซฟด้วย";
+            typeEffect('dialog', text); // เรียกใช้ฟังก์ชัน
+        });
+        </script>
 </body>
 </html>
