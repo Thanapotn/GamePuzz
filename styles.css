@@ -1,0 +1,136 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: black;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.title {
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4e69;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #22223b;
+}
+.settings-container {
+    background: rgba(0, 0, 0, 0.7); /* เพิ่มพื้นหลังโปร่งแสงสีดำ */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* เงาสีขาวเบาๆ */
+}
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* ทำให้ภาพอยู่ข้างหลัง */
+}
+.character {
+    position: absolute;
+    bottom: 10%; /* ให้ตัวละครติดพื้น */
+    left: 20%;
+    transform: translateX(-50%);
+    width: 250px; /* ปรับขนาดให้เหมาะสม */
+}
+.dialog-box button {
+    width: 50px; /* ลดขนาดปุ่ม */
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มความโปร่งใส */
+    border-radius: 50%;
+}
+.dialog-box {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7); /* สีดำโปร่งใส */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30%; /* ขยับขึ้นมาให้สูงกว่าช่องคุย */
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+.choices button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 220px;
+}
+.safe-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.safe-image {
+    width: 300px; /* ปรับขนาดภาพ */
+    display: block;
+    margin: 0 auto;
+}
+#codeInput {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+#submitCode {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

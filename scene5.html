@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากสนทนา</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <img src="ทำงาน.jpg" class="background">
+        
+        <!-- นักสืบ -->
+        <div class="character detective">
+            <img src="นักสืบ.png"style="opacity: 0.6;">
+        </div>
+        
+        <!-- แม่บ้าน -->
+        <div class="character maid" style="right: 10%; left: auto;">
+            <img src="แม่บ้าน.png">
+        </div>
+        
+        <!-- กล่องสนทนาแม่บ้าน -->
+        <div class="dialog-box">
+            <span class="name">แม่บ้าน</span>
+            <p>นี้ค่ะ ห้องทำงานที่เกิดเหตุขึ้น</p>
+            <button onclick="nextScene()">▶</button>
+        </div>
+        
+    </div>
+    
+    <script>
+        function nextScene() {
+            window.location.href = "scene6.html";
+        }
+    </script>
+</body>
+</html>

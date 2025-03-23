@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากสนทนา</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <img src="room.jpg" class="background">
+        
+        <!-- นักสืบ -->
+        <div class="character detective">
+            <img src="นักสืบ.png" style="opacity: 0.6;">
+        </div>
+        
+        <!-- แม่บ้าน -->
+        <div class="character maid" style="right: 10%; left: auto;">
+            <img src="แม่บ้าน.png">
+        </div>
+        
+        <!-- กล่องสนทนาแม่บ้าน -->
+        <div class="dialog-box">
+            <span class="name">แม่บ้าน</span>
+            <p>ได้ค่ะ จะถามเรื่องไหนดีคะ</p>
+        </div>
+        
+        <!-- ตัวเลือกคำถาม -->
+        <div class="choices">
+            <button onclick="askQuestion1('คนในบ้านมีใครบาง')">มีใครอยู่บ้านบ้างครับ</button>
+            <button onclick="askQuestion2('เวลาเกิดเหตุ')">เรื่องเกิดเวลาไหน</button>
+            <button onclick="askQuestion3('พาไปที่เกิดเหตุ')">พาไปที่เกิดเหตุ</button>
+            <button onclick="askQuestion4('ถ้างั้นฉันขอตัวกลับก่อน')">ผมขอตัวกลับก่อนนะครับ</button>
+        </div>
+    </div>
+    
+    <script>
+        function askQuestion1() {
+            window.location.href = "quest1.html";
+        }
+        function askQuestion2() {
+            window.location.href = "quest2.html";
+        }
+        function askQuestion3() {
+            window.location.href = "scene5.html";
+        }
+        function askQuestion4() {
+            window.location.href = "end1.html";
+        }
+    </script>
+</body>
+</html>

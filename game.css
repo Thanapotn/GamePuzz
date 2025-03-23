@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#dropZone {
+    width: 300px;  /* ขนาดของกรอบ */
+    height: 300px;
+    border: 2px dashed gray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+    grid-template-rows: repeat(2, 1fr); /* 2 แถว */
+    gap: 0px; /* ไม่มีช่องว่าง */
+    position: relative;
+    margin: 20px auto;
+    padding: 0;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.draggable {
+    max-width: 100%;  /* ทำให้ภาพไม่เกินกรอบ */
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+#dropText {
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+}
+
+#pieces {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
+
+.placed {
+    position: relative;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

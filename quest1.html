@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากแม่บ้าน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <img src="room.jpg" class="background">
+        <div class="character detective fade">
+            <img src="assets/detective.png">
+        </div>
+        <div class="character maid" style="right: 10%; left: auto;">
+            <img src="แม่บ้าน.png">
+        </div>
+        <div class="dialog-box">
+            <span class="name">แม่บ้าน</span>
+            <p>ตอนเกิดเห็นคนที่อยู่จะมี ภรรยา และ ลูกทั้ง2คน</p>
+            <button onclick="nextScene()">▶</button>
+        </div>
+    </div>
+    <script>
+        function nextScene() {
+            window.location.href = "scene4.html";
+        }
+    </script>
+</body>
+</html>

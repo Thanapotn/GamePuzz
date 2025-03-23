@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จบเกม</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            cursor: pointer; /* ทำให้รู้ว่าคลิกได้ */
+        }
+
+        .end-text {
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onclick="goHome()"> 
+    <div class="end-text">
+        <p>จบ</p>
+        <p>DEMO</p>
+    </div>
+
+    <script>
+        function goHome() {
+            window.location.href = "index.html"; // เปลี่ยนเส้นทางไปหน้าหลัก
+        }
+    </script>
+</body>
+</html>

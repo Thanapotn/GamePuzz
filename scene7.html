@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากสนทนา</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <img src="ทำงาน.jpg" class="background">
+        
+        <!-- นักสืบ -->
+        <div class="character detective">
+            <img src="นักสืบ.png">
+        </div>
+        
+        <!-- กล่องสนทนาแม่บ้าน -->
+        <div class="dialog-box">
+            <span class="name">นักสืบ</span>
+            <p>เริ่มสำรวจจากอะไรก่อนดี</p>
+        </div>
+        
+        <!-- ตัวเลือกคำถาม -->
+        <div class="choices">
+            <button onclick="askQuestion1('ตรวจรอบศพว่าเจออะไรบ้าง')">ตรวจรอบศพว่าเจออะไรบ้าง</button>
+            <button onclick="askQuestion2('สำรวจโต็ะ')">สำรวจโต็ะ</button>
+            <button onclick="askQuestion3('สำรวจกองเอกสาร')">สำรวจกองเอกสาร</button>
+            <button onclick="askQuestion4('ไปที่อื่นต่อ')">ไปที่อื่นต่อ</button>
+        </div>
+    </div>
+    
+    <script>
+        function askQuestion1() {
+            window.location.href = "quest7.1.html";
+        }
+        function askQuestion2() {
+            window.location.href = "quest7.3.html";
+        }
+        function askQuestion3() {
+            window.location.href = "game1.html";
+        }
+        function askQuestion4() {
+            window.location.href = "scene8.html";
+        }
+    </script>
+</body>
+</html>

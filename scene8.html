@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากแม่บ้าน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .chin {
+        position: absolute;
+        bottom: 180px; /* ขยับขึ้นให้อยู่เหนือช่องข้อความ */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0; /* อยู่หน้าช่องข้อความ */
+    }
+</style>
+<body>
+    <div class="scene">
+        <img src="ทำงาน.jpg" class="background">
+        <div class="chin">
+            <img src="เด็ก1.png" >
+        </div>
+        <div class="dialog-box">
+            <span class="name">???</span>
+            <p>คุณเป็นใครเข้ามาได้ไงนะ</p>
+            <button onclick="nextScene()">▶</button>
+        </div>
+    </div>
+    <script>
+        function nextScene() {
+            window.location.href = "scene9.html";
+        }
+    </script>
+</body>
+</html>

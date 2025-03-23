@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากแม่บ้าน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <img src="ทำงาน.jpg" class="background">
+        <div class="character detective fade" style="right: 10%; left: auto;">
+            <img src="นักสืบ.png">
+        </div>
+        <div class="safe-container">
+            <img src="เอกสาร.png" alt="ตู้เซฟ" class="safe-image">
+        </div>
+        
+        <div class="dialog-box">
+            <span class="name">นักสืบ</span>
+            <p>ใบนี้เกี่ยวกับมารดกและเงินทองที่ลงนามไว้</p>
+            <p>โดยเขียนไว้ประมาณว่าแบ่งทรัพสิน50%ให้ภรรยา ส่วน25%แบ่งให้ลูกทั้งสอง และบ้านหลังนี้เป็ยของลูกคนที่2</p>
+            <button onclick="nextScene()">▶</button>
+        </div>
+    </div>
+    <script>
+        function nextScene() {
+            window.location.href = "scene7.html";
+        }
+    </script>
+</body>
+</html>

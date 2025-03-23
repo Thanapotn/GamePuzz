@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากแม่บ้าน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scene">
+        <img src="ทำงาน.jpg" class="background">
+        <div class="character detective fade">
+            <img src="นักสืบ.png">
+        </div>
+        <div class="character maid" style="right: 10%; left: auto; bottom: 180px;">
+            <img src="เด็ก1.png" style="opacity: 0.6;">
+        </div>
+        <div class="dialog-box">
+            <span class="name">นักสืบ</span>
+            <p>คุณคือลูกสาวของผู้ตายหรอ</p>
+            <button onclick="nextScene()">▶</button>
+        </div>
+    </div>
+    <script>
+        function nextScene() {
+            window.location.href = "scene11.html";
+        }
+    </script>
+</body>
+</html>

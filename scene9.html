@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฉากแม่บ้าน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .detective {
+        position: absolute;
+        bottom: 120px; /* ขยับขึ้นให้อยู่เหนือช่องข้อความ */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0; /* อยู่หน้าช่องข้อความ */
+    }
+</style>
+<body>
+    <div class="scene">
+        <img src="ทำงาน.jpg" class="background">
+        <div class="detective">
+            <img src="นักสืบ.png" >
+        </div>
+        <div class="dialog-box">
+            <span class="name">นักสืบ</span>
+            <p>สวัดดีครับผม</p>
+            <p>ผมเป็นนักสืบที่มาดูว่าเกิดเหตุอะไรขึ้น</p>
+            <button onclick="nextScene()">▶</button>
+        </div>
+    </div>
+    <script>
+        function nextScene() {
+            window.location.href = "scene10.html";
+        }
+    </script>
+</body>
+</html>
